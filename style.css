@@ -18,6 +18,7 @@ body {
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
 }
 
+/* Display */
 .calculator-display {
     background: black;
     color: white;
@@ -34,4 +35,27 @@ body {
     font-size: 45px;
     font-family: 'Lucida Console', sans-serif;
     font-weight: 100;
+    overflow-x: auto;
 }
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

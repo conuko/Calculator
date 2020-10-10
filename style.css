@@ -106,3 +106,10 @@ body {
       background: #FE9505;
       color: black;
   }
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 95%;
+    }
+}

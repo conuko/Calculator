@@ -11,6 +11,8 @@ body {
     background: linear-gradient(to right, #8e9eab, #eef2f3);
 }
 
+/* =============== Calculator =============== */
+
 .calculator {
     background: black;
     width: 400px;
@@ -18,7 +20,7 @@ body {
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
 }
 
-/* Display */
+/*  =============== Display =============== */
 .calculator-display {
     background: black;
     color: white;
@@ -38,24 +40,33 @@ body {
     overflow-x: auto;
 }
 
-/* Custom Scrollbar */
+/* =============== Custom Scrollbar =============== */
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
-  /* Track */
+
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
-  
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
-  
-  /* Handle on hover */
+
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  /* =============== Buttons =============== */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .equal-sign {
+      grid-column: -2;
+      grid-row: 2 / span 4;
   }
